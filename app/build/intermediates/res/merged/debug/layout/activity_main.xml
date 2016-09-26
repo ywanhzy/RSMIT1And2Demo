@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rsmit1and2demo.MainActivity" >
+    
+    <Spinner 
+        android:id="@+id/selectType_Sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/Btn_LL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectType_Sp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button 
+            android:id="@+id/playBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            /> 
+          
+         <Button 
+            android:id="@+id/stopBtn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:textSize="17sp"
+            />
+        
+    </LinearLayout>
+    
+    <!-- MIT -->
+    <RelativeLayout 
+        android:id="@+id/MIT_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/Btn_LL"
+        >
+         
+        <EditText 
+            android:id="@+id/MIT_Edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            />
+        
+    </RelativeLayout>
+    
+    <!-- MIT2 -->
+    <RelativeLayout 
+        android:id="@+id/MIT2_RL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/Btn_LL"
+        android:visibility="gone"
+        >
+        
+        <!-- Error -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Error_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Error_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Error："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Error_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+	
+	    <!-- title -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Title_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/Demo_Error_LL"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Title_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Title："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Title_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+	    
+	    <!-- action -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Action_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/Demo_Title_LL"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Action_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Action："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Action_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+	    
+	    <!-- value1 -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Value1_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/Demo_Action_LL"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Value1_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Value1："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Value1_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+	    
+	    <!-- value2 -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Value2_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/Demo_Value1_LL"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Value2_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Value2："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Value2_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+	    
+	    <!-- group -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Group_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/Demo_Value2_LL"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Group_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Group："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Group_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+	    
+	    <!-- type -->
+	    <LinearLayout 
+	        android:id="@+id/Demo_Type_LL"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/Demo_Group_LL"
+	        android:orientation="horizontal"
+	        >
+	        <TextView 
+	            android:id="@+id/Demo_Type_TV"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_gravity="left|center"
+	            android:textSize="17sp"
+	            android:text="Type："
+	            />
+	        <EditText 
+	            android:id="@+id/Demo_Type_Edt"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="17sp"
+	            />
+	    </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
