@@ -486,6 +486,7 @@ public class MainActivity extends Activity
 	private void MIT2Stop()
 	{
 		if( mit2 != null )
+
 		{
 			mit2.interruptReceive();
 			try
